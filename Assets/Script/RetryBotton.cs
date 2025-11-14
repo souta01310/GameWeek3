@@ -6,11 +6,18 @@ using UnityEngine;
 
 public class RetryBotton : MonoBehaviour
 {
-    [SerializeField] public string sceneName;
+    [SerializeField] public string retry = "MainScene";
+    [SerializeField] public string title = "TitleScene";
     
 
-    public void RetryBotton1()
+    public void Retry()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(retry    );
+
+    }
+
+    public void Title()
+    {
+        SceneManager.LoadScene(title);
     }
 }

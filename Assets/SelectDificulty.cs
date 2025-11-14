@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SelectDificulty : MonoBehaviour
 {
-    string sceneName = "SampleScene";
+    string sceneName = "MainScene";
     public void Easy()
     {
         Debug.Log("easy");
@@ -21,17 +21,5 @@ public class SelectDificulty : MonoBehaviour
     {
         GameManeger.Instance.difficultyLevel = "hard";
         SceneManager.LoadScene(sceneName);
-    }
-
-
-    void Start()
-    {
-        
-    }
-
-
-    void Update()
-    {
-        
     }
 }
